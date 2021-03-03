@@ -1,4 +1,4 @@
-import { Property } from "../Propertry";
+import { Property } from "~/domain/entity/Propertry";
 
 export interface User {
   id: string;

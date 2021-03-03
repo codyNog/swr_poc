@@ -1,5 +1,9 @@
-import { UserDetail } from "~/components/organisms/UserDetail";
+import { UserList } from "~/components/organisms/UserList";
 
 export const Root: React.FC = () => {
-  return <UserDetail />;
+  return (
+    <div>
+      <UserList />
+    </div>
+  );
 };

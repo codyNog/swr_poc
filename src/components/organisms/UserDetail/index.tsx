@@ -10,12 +10,16 @@ export const UserDetail: React.FC<Props> = () => {
 
   return (
     <div>
-      <h1>{user.name}</h1>
-      <p>{user.age}</p>
-      <p>{user.mail}</p>
-      {user.properties.map((elem) => {
-        return <PropertyCard key={elem.id} property={elem} />;
-      })}
+      {!!user && (
+        <>
+          <h1>{user.name}</h1>
+          <p>{user.age}</p>
+          <p>{user.mail}</p>
+          {user.properties.map((elem) => {
+            return <PropertyCard key={elem.id} property={elem} />;
+          })}
+        </>
+      )}
     </div>
   );
 };

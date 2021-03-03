@@ -1,6 +1,7 @@
 import App from "next/app";
 import Head from "next/head";
 import "ress";
+import { GlobalStore } from "~/store/global";
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -21,7 +22,9 @@ export default class MyApp extends App {
         <Head>
           <title>Next App</title>
         </Head>
-        <Component {...pageProps} />
+        <GlobalStore.Provider>
+          <Component {...pageProps} />
+        </GlobalStore.Provider>
       </>
     );
   }

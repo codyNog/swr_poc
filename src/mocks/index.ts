@@ -18,8 +18,11 @@ const user: User = {
   properties
 };
 
+const users: User[] = [user];
+
 export const mock = {
   property,
   properties,
-  user
+  user,
+  users
 };
