@@ -1,5 +1,5 @@
-import { Organism } from "~/components/organisms";
+import { UserDetail } from "~/components/organisms/UserDetail";
 
 export const Root: React.FC = () => {
-  return <Organism />;
+  return <UserDetail />;
 };
